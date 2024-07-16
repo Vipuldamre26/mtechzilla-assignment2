@@ -29,6 +29,12 @@ const Header = ({ data, setData }) => {
                     )
                 })
             }
+
+            {
+                data.length === 0 && <div className="h-4/5 flex justify-center items-center">
+                    <h1 className='text-3xl'>No User</h1>
+                </div>
+            }
         </div>
     )
 }
